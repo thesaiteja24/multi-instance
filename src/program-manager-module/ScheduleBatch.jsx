@@ -13,7 +13,7 @@ import dayjs from 'dayjs';
 import { COLLEGE_CODE } from '../constants/AppConstants.js';
 
 const techStacks = {
-  DIET: [COLLEGE_CODE],
+  [COLLEGE_CODE]: [COLLEGE_CODE],
 };
 
 // Validation schema

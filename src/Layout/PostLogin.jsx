@@ -37,8 +37,8 @@ const PostLogin = ({
             onClick={() => navigate('/')}
           />
           <img
-            src="/images/DIET-Web-Icon.webp"
-            alt="Codegnan Logo"
+            src={import.meta.env.VITE_COLLEGE_LOGO}
+            alt="College Logo"
             className="h-[80px] py-4 cursor-pointer contain"
             onClick={() => navigate('/')}
           />
@@ -149,8 +149,8 @@ const PostLogin = ({
             onClick={() => navigate('/')}
           />
           <img
-            src="/images/DIET-Web-Icon.webp"
-            alt="Codegnan Logo"
+            src={import.meta.env.VITE_COLLEGE_LOGO}
+            alt="College Logo"
             className="h-[90px] py-4 cursor-pointer contain"
             onClick={() => navigate('/')}
           />

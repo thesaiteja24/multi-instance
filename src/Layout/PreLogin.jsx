@@ -18,8 +18,8 @@ const PreLogin = () => {
           onClick={() => navigate('/')}
         />
         <img
-          src="/images/DIET-Web-Icon.webp"
-          alt="Dhanekula Logo"
+          src={import.meta.env.VITE_COLLEGE_LOGO}
+          alt="College Logo"
           className="h-[90px] py-6  cursor-pointer "
           onClick={() => navigate('/')}
         />

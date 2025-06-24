@@ -8,5 +8,7 @@ export const STUDENT = 'student_login_details';
 export const TESTER = 'Testers';
 export const JAVA = 'Java';
 export const PYTHON = 'Python';
-export const COLLEGE_CODE = 'PSCMR';
-export const COLLEGE_SUBJECTS = ['C','DS-C']
+export const COLLEGE_CODE = import.meta.env.VITE_COLLEGE_CODE;
+export const COLLEGE_SUBJECTS = import.meta.env.VITE_COLLEGE_SUBJECTS
+  ? JSON.parse(import.meta.env.VITE_COLLEGE_SUBJECTS)
+  : [];

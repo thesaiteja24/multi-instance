@@ -42,7 +42,7 @@ function isSunday(isoDate) {
 }
 
 const techStackSubjects = {
-  DIET: [COLLEGE_CODE],
+  [COLLEGE_CODE]: [COLLEGE_CODE],
 };
 
 const Attendance = () => {

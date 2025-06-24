@@ -17,7 +17,7 @@ const CourseQuerySection = lazy(() => import('./CourseQuerySection'));
 const Collaboration = lazy(() => import('./Collaboration'));
 const BannerPage = lazy(() => import('./BannerPage'));
 const Footer = lazy(() => import('./Footer'));
-const Dhanekula = lazy(() => import('./Dhanekula'));
+const CollegeAbout = lazy(() => import('./CollegeAbout'));
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -73,7 +73,7 @@ export default function Home() {
       <InfoBanner />
       <TestimonialsV />
       <RotatingCarousel />
-      <Dhanekula />
+      <CollegeAbout />
       <Dashboard />
       <CourseQuerySection />
       <Collaboration />
