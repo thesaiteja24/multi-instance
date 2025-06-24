@@ -1,0 +1,72 @@
+.anchor-app-bar {
+  text-decoration: none;
+  border: none !important;
+  outline: none !important;
+}
+
+.scroll-container {
+  background-color: #132ee0 !important;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home-scroll-text {
+  font-family: 'Afacad';
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.home-scroll-text:hover {
+  color: #fdfa01;
+  font-weight: 400;
+  animation-play-state: paused;
+}
+
+.home-arrow {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.svg-inline--fa {
+  vertical-align: middle !important;
+}
+
+.home-new {
+  background-color: #fdfa01;
+  color: #000000;
+  border-radius: 20px;
+  padding: 0px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.home-100-days {
+  color: #fdfa01;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1300px) {
+  .home-scroll-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .home-new {
+    font-size: 1.3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+}

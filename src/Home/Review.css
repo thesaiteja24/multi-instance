@@ -1,0 +1,111 @@
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-images {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  animation: rotate 20s linear infinite;
+  transform-origin: center center;
+}
+
+.carousel-image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-card {
+  position: relative;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.card-content-wrapper {
+  position: relative;
+}
+
+.card-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 3px solid #ccc;
+}
+
+.card-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-rating {
+  color: #f39c12;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card-review {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-smile-icon {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,916 @@
+.main-container {
+  background: url('/images/rotate-bg.webp');
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 50%;
+  left: 50px;
+  z-index: 2;
+}
+
+.text-next {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile {
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center;
+}
+
+.spiral-bg {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.highlight-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 4px;
+  border: 1px solid #ffffff;
+}
+.center-text {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.profile.active .highlight-circle {
+  border: 2px solid #4caf50;
+}
+
+.highlight-circle img,
+.rotate-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 35%;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+  background-size: cover;
+}
+
+.center-profile {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 180px;
+  height: 180px;
+}
+
+.center-profile .highlight-circle {
+  border: 3px solid #ffd700;
+}
+
+.center-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.right-section-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+}
+
+.right-section {
+  color: white;
+  font-family: 'Afacad';
+}
+
+.request-callback {
+  text-decoration: none;
+}
+
+.text-content {
+  align-self: flex-start;
+  letter-spacing: 1px;
+}
+
+.text-content p {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #ffea00;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-family: 'Afacad';
+}
+
+.callback-button-rotating {
+  background-color: #fdfa01; /* Bright yellow */
+  color: #000;
+  padding: 5px 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Afacad';
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.package {
+  color: #fdfa01;
+}
+
+.callback-button-rotating:hover {
+  background-color: #fdfa01;
+  transform: scale(1.05);
+}
+
+.callback-button:active {
+  transform: scale(1);
+}
+
+.question-mark {
+  max-width: 160px;
+  height: auto;
+  display: block;
+}
+
+.question-mark {
+  min-width: 48px; /* Ensure sufficient clickable width */
+  min-height: 48px; /* Ensure sufficient clickable height */
+  padding: 8px; /* Add padding around the icons */
+  display: inline-flex; /* Maintain alignment */
+  justify-content: center;
+  align-items: center;
+}
+
+.call {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1800px) {
+  .main-container {
+    display: flex;
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  .profile {
+    width: 70px;
+    height: 120px;
+  }
+
+  .center-profile {
+    width: 240px;
+    height: 240px;
+  }
+
+  .carousel-container {
+    width: 40%;
+  }
+
+  .right-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .highlight {
+    font-size: 6rem;
+    font-weight: 800;
+  }
+
+  .text-content p {
+    font-size: 2.9rem;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 20px;
+    margin-bottom: 50px;
+  }
+
+  .text-next {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .question-mark {
+    max-width: 280px;
+    margin: 0px;
+    display: block;
+  }
+
+  .callback-button-rotating {
+    background-color: #fdfa01; /* Bright yellow */
+    color: #000;
+    padding: 0.75rem 1rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Afacad';
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  .call {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .center-text {
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .center-text.package {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+  .main-container {
+    display: flex;
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  .profile {
+    width: 100px;
+    height: 140px;
+  }
+
+  .center-profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  .right-section-container {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .text-content p {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 20px;
+    margin-bottom: 50px;
+  }
+
+  .text-next {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .question-mark {
+    max-width: 650px;
+    min-height: auto;
+    margin: 0px;
+    display: block;
+  }
+
+  .callback-button-rotating {
+    background-color: #fdfa01; /* Bright yellow */
+    color: #000;
+    padding: 10px 1rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Afacad';
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  .carousel-container {
+    width: 40%;
+  }
+
+  .call {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .center-text {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .center-text.package {
+    font-size: 25px;
+  }
+  .highlight {
+    font-size: 6rem;
+    letter-spacing: 10px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+  .main-container {
+    display: flex;
+    padding: 80px;
+    min-height: 100vh;
+  }
+
+  .profile {
+    width: 60px;
+    height: 100px;
+  }
+
+  .center-text {
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+
+  .center-profile {
+    width: 220px;
+    height: 220px;
+  }
+
+  .right-section-container {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .text-content p {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 4rem;
+    margin: 15px 0;
+    font-weight: 600;
+    letter-spacing: 14px;
+    margin-bottom: 50px;
+  }
+  .name {
+    font-size: 16px;
+  }
+
+  .text-next {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .callback-button-rotating {
+    font-size: 1em;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .question-mark {
+    max-width: 170px;
+    margin: 0px;
+    display: block;
+  }
+
+  .callback-button-rotating {
+    background-color: #fdfa01; /* Bright yellow */
+    color: #000;
+    padding: 0.75rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Afacad';
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  .call {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .name {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 976px) and (max-width: 1200px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    min-height: 40vh;
+    margin-top: 200px;
+    margin-bottom: 80px;
+  }
+
+  .center-text {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 1;
+    left: 30%;
+  }
+
+  .text-content p {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 4rem;
+    margin: 15px 0;
+    font-weight: 600;
+    letter-spacing: 14px;
+    margin-bottom: 50px;
+  }
+
+  .question-mark {
+    min-width: 200px;
+    max-height: auto;
+  }
+
+  .profile {
+    width: 80px;
+    height: 130px;
+  }
+
+  .center-profile {
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    left: 30%;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .right-section-container {
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 160px;
+    display: flex;
+  }
+
+  .right-section {
+    text-align: center;
+    width: 100%;
+  }
+
+  .callback-button-rotating {
+    background-color: #fdfa01; /* Bright yellow */
+    color: #000;
+    padding: 0.75rem 1rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Afacad';
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 976px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .center-text {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .carousel-container {
+    min-height: 40vh;
+    margin-top: 180px;
+    margin-bottom: 80px;
+  }
+
+  .text-content p {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .text-content h1 {
+    font-size: 4rem;
+    margin: 15px 0;
+    font-weight: 600;
+    letter-spacing: 14px;
+    margin-bottom: 50px;
+  }
+
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 1;
+    left: 30%;
+  }
+
+  .profile {
+    width: 80px;
+    height: 120px;
+  }
+
+  .center-profile {
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    left: 30%;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .right-section-container {
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 160px;
+    display: flex;
+  }
+
+  .question-mark {
+    display: none;
+  }
+
+  .right-section {
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .callback-button-rotating {
+    background-color: #fdfa01; /* Bright yellow */
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Afacad';
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 476px) and (max-width: 576px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    margin-top: 300px;
+    margin-bottom: 250px;
+  }
+
+  .text-content p {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  .text-content h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+    font-weight: 600;
+    letter-spacing: 14px;
+    align-self: flex-start;
+  }
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 1;
+    left: 30%;
+  }
+
+  .profile {
+    width: 60px;
+    height: 90px;
+  }
+
+  .center-profile {
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    left: 30%;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+  .package {
+    font-size: 10px;
+  }
+
+  .right-section-container {
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 160px;
+    display: flex;
+  }
+
+  .question-mark {
+    display: none;
+  }
+
+  .right-section {
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    margin-top: 250px;
+    margin-bottom: 200px;
+  }
+
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 1;
+    left: 25%;
+  }
+
+  .profile {
+    width: 50px;
+    height: 80px;
+  }
+
+  .center-text span {
+    font-size: 16px;
+  }
+
+  .center-profile {
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    left: 25%;
+  }
+
+  .text-content p {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    font-weight: 600;
+    letter-spacing: 14px;
+    align-self: flex-start;
+  }
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+  .package {
+    font-size: 8px;
+  }
+
+  .right-section-container {
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .question-mark {
+    display: none;
+  }
+
+  .right-section {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .center-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .spiral-bg {
+    left: 10%;
+    width: 760px;
+    top: 11%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+  .spiral-bg {
+    left: 24%;
+    width: 700px;
+    top: 11%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .spiral-bg {
+    width: 550px;
+    left: 8%;
+    top: 2%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .spiral-bg {
+    width: 500px;
+    left: 4%;
+    top: 24%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .spiral-bg {
+    width: 520px;
+    top: 1%;
+    left: 15%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .spiral-bg {
+    width: 530px;
+    top: 2%;
+    left: 7%;
+  }
+}
+
+@media (max-width: 576px) {
+  .spiral-bg {
+    width: 360px;
+    top: 1%;
+    left: 12%;
+  }
+}

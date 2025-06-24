@@ -1,0 +1,35 @@
+.branch-dashboard {
+  background-color: #e1e7ff !important;
+  padding: 2% 10%;
+}
+.title {
+  text-align: center;
+  margin-bottom: 1%;
+}
+.branch-list {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 200px);
+  gap: 10px 7%;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.branch-name {
+  padding: 10px;
+  color: white;
+  background-color: #027fdc;
+}
+
+.branch-count {
+  padding: 10px;
+  color: black;
+  font-weight: bolder;
+  background-color: #789bec !important;
+}
+@media screen and (max-width: 768px) {
+  .branch-list {
+    grid-template-columns: 1fr; /* Only one branch per row for smaller screens */
+  }
+}

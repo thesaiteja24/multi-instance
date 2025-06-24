@@ -1,0 +1,502 @@
+/* General Styles */
+.dashboard {
+  padding: 20px;
+  font-family: 'Afacad', sans-serif;
+  color: #333;
+}
+
+.dashboard-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dashboard-title span {
+  color: #132ee0;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #ededed; /* Light gray color */
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* Search Bar (Now Outside the Sections) */
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  /* Same width as the section */
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Section Wrapper */
+.section {
+  flex: 1 1 45%; /* Allows wrapping for responsiveness */
+  /* Match the max-width of the search bar */
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid #132ee0;
+  width: 100%;
+}
+
+/* Table Styles */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table thead th {
+  background-color: #132ee0;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+}
+
+.styled-table tbody td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.dashboard-count {
+  text-align: center !important;
+}
+
+/* Pagination */
+.custom-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.page-number {
+  padding: 8px 12px;
+  background-color: #ededed;
+  color: #132ee0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.prev-next {
+  padding: 8px 12px;
+  border: 1px solid #132ee0;
+  background-color: #132ee0;
+  color: #132ee0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.page-number.active {
+  background-color: #132ee0;
+  color: #ededed;
+}
+
+.prev-next.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #132ee0;
+  color: #ffffff;
+}
+
+.dots {
+  color: #aaa;
+}
+
+@media (min-width: 1500px) {
+  .dashboard {
+    margin: 0 auto;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  .dashboard-content {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .search-bar {
+    max-width: 800px;
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px 0px #00000030;
+  }
+  .custom-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .styled-table thead th,
+  .styled-table tbody td {
+    font-size: 1rem;
+    padding: 14px;
+    letter-spacing: 1px;
+  }
+
+  .section {
+    min-width: 650px;
+    max-width: 700px;
+    min-height: 260px;
+  }
+
+  .page-number {
+    font-size: 1rem;
+    border-radius: 2px;
+    color: #000000;
+    box-shadow: 0px 4px 4px 0px #00000030;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bold;
+  }
+
+  .prev-next {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .dots {
+    color: #aaa;
+    font-size: 2rem;
+  }
+}
+
+/* Responsive Styles */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .dashboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .dashboard-content {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .search-bar {
+    max-width: 700px;
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .section {
+    min-width: 500px;
+    min-height: 260px;
+  }
+  .custom-pagination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .styled-table thead th,
+  .styled-table tbody td {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .page-number {
+    font-size: 15px;
+    border-radius: 2px;
+    color: #000000;
+    box-shadow: 0px 4px 4px 0px #00000030;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .prev-next {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .dots {
+    color: #aaa;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 796px) and (max-width: 1200px) {
+  .dashboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  .dashboard-content {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .section {
+    min-width: 500px;
+    max-width: 500px;
+  }
+
+  .search-bar {
+    max-width: 700px;
+    font-size: 1rem;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  .custom-pagination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .styled-table thead th,
+  .styled-table tbody td {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .page-number {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 8px;
+    color: #000000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .prev-next {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .dots {
+    color: #aaa;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 796px) {
+  .dashboard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  .dashboard-content {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .search-bar {
+    max-width: 500px;
+    font-size: 0.8rem;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  .custom-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .section {
+    min-height: 200px;
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .styled-table tbody td {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .styled-table thead th {
+    text-align: center;
+  }
+
+  .page-number {
+    font-size: 1.1rem;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    color: #000000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .prev-next {
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .prev-next_1 {
+    display: none;
+  }
+
+  .dots {
+    color: #aaa;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-title {
+    font-size: 2rem;
+  }
+  .search-bar {
+    max-width: 300px;
+    font-size: 0.8rem;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+
+  .dashboard {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .styled-table tbody td,
+  .styled-table thead th {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .section {
+    max-width: 250px;
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .page-number {
+    font-size: 1rem;
+    padding: 1px 4px;
+    border-radius: 3px;
+  }
+
+  .prev-next {
+    font-size: 1.2rem;
+    border-radius: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .custom-pagination {
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  .prev-next_1 {
+    display: none;
+  }
+}

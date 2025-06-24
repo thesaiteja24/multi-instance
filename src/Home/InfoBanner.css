@@ -1,0 +1,91 @@
+.info-banner-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('/images/info-bg.webp');
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  padding: 20px; /* Default padding */
+}
+
+.info-card {
+  margin: 5px;
+}
+
+.info-heading,
+.info-subtext {
+  font-family: 'Afacad', sans-serif; /* Apply common font-family */
+}
+
+.info-heading {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-subtext {
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .info-heading {
+    font-size: 13px;
+  }
+  .info-subtext {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .info-banner-container {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 976px) {
+  .info-heading {
+    font-size: 1.8rem;
+  }
+  .info-subtext {
+    font-size: 1.2rem;
+  }
+  .info-banner-container {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 976px) and (max-width: 1200px) {
+  .info-heading {
+    font-size: 2rem;
+  }
+  .info-subtext {
+    font-size: 1.5rem;
+  }
+  .info-banner-container {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .info-heading {
+    font-size: 2rem;
+  }
+  .info-subtext {
+    font-size: 1.5rem;
+  }
+  .info-banner-container {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .info-heading {
+    font-size: 3.5rem;
+  }
+  .info-subtext {
+    font-size: 2.4rem;
+  }
+  .info-banner-container {
+    padding: 90px;
+  }
+}

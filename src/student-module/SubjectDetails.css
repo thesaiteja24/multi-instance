@@ -1,0 +1,26 @@
+.scrollable-sidebar {
+  overflow-y: auto;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.scrollable-sidebar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.scrollable-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-sidebar::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 3px;
+}
+
+.scrollable-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

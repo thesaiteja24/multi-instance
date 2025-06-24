@@ -1,0 +1,25 @@
+{
+  "short_name": "Codegnan Job Portal",
+  "name": "Codegnan Job Portal",
+  "icons": [
+    {
+      "src": "https://images.yourstory.com/cs/images/companies/12d1e0253106-codegnanlogo1-1697535148242.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://images.yourstory.com/cs/images/companies/12d1e0253106-codegnanlogo1-1697535148242.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://images.yourstory.com/cs/images/companies/12d1e0253106-codegnanlogo1-1697535148242.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

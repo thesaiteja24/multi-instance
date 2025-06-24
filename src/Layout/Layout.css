@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-size: 100%; /* Default base: 16px */
+    --bg-size: auto;
+  }
+
+  /* 110% Zoom (approx. 1.1dppx) */
+  @media (min-resolution: 1.1dppx) {
+    :root {
+      font-size: 95%;
+    }
+  }
+
+  /* 125% Zoom (approx. 1.25dppx) */
+  @media (min-resolution: 1.25dppx) {
+    :root {
+      font-size: 90%;
+    }
+  }
+
+  /* 133% Zoom (approx. 1.33dppx) */
+  @media (min-resolution: 1.33dppx) {
+    :root {
+      font-size: 85%;
+    }
+  }
+
+  /* 140% Zoom (approx. 1.4dppx) */
+  @media (min-resolution: 1.4dppx) {
+    :root {
+      font-size: 82.5%;
+    }
+  }
+
+  /* 150% Zoom (approx. 1.5dppx) */
+  @media (min-resolution: 1.5dppx) {
+    :root {
+      font-size: 80%;
+      --bg-size: 80%;
+    }
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    color: #333;
+  }
+}

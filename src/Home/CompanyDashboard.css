@@ -1,0 +1,78 @@
+.company-dashbaord {
+  background-color: #e1e7ff !important;
+  display: flex;
+  padding: 2% 10%;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: -1%;
+}
+.success {
+  margin: auto;
+  color: #32398d;
+}
+.company-search-bar {
+  width: 40%;
+  margin: 1.8% auto;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  color: black;
+}
+
+table {
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  background-color: #e1e7ff !important;
+  padding: 15px 20px;
+  color: #124241;
+  border-collapse: collapse;
+  border: 1px solid rgba(52, 64, 154, 0.4) !important;
+  border: none !important;
+  border-bottom-style: solid !important;
+}
+th {
+  color: white;
+  background-color: #32398d !important;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #34409a !important;
+}
+.pagination button {
+  color: black !important;
+}
+li .Mui-selected {
+  background-color: #124241 !important;
+  color: white !important;
+}
+.css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon path {
+  color: black !important;
+}
+
+@media (max-width: 700px) {
+  .company-dashbaord {
+    padding: 2% 0%;
+  }
+  .company-search-bar {
+    width: 80%;
+  }
+  table {
+    font-size: small;
+  }
+  td,
+  th {
+    padding: 8px;
+  }
+  .students-placed {
+    width: 40%;
+  }
+}

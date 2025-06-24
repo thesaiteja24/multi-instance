@@ -1,0 +1,21 @@
+:root {
+  /* somewhere rare color */
+  --color-primary: #19216f;
+  /* main body  text colors and also background colors */
+  --color-secondary: #007f;
+  /* class schedulling color */
+  --color-third: #07169a;
+  /* sidebar */
+  --gradient-sidebar: linear-gradient(180deg, #00007f 0%, #0920f5 100%);
+
+  /* header */
+  --color-header: linear-gradient(
+    90deg,
+    #ffffff 35%,
+    #0920f5 58.17%,
+    #00007f 100%
+  );
+
+  /* studentData linear color */
+  --studentdata: linear-gradient(180deg, #0920f5 0%, #02017e 100%);
+}

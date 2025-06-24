@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.codegnan-cover-page {
+  width: 100%;
+}
+
+.coverpage-container {
+  background-image: url('/images/cover-bg.webp');
+  background-size: cover;
+  display: flex;
+  width: 100%;
+}
+
+.home-text-container {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.home-cover-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.placement-card {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Afacad';
+  margin-top: 20px;
+  margin-left: 50px;
+  min-width: 100px;
+}
+
+.student-count {
+  color: #ed1334;
+}
+
+.plus-sign {
+  color: #ed1334;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.blinking {
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fdfa01, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-clip: text;
+  animation: animate 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  font-weight: 900;
+}
+
+.students-placed {
+  color: #00020c;
+  font-size: 18px;
+  text-align: end;
+  letter-spacing: 1px;
+  padding-right: 10px;
+}
+
+.counting {
+  color: #fdfa01;
+  font-size: 1rem;
+  margin: 0;
+  background-color: #000;
+  font-family: 'Afacad';
+  padding: 4px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.image-container {
+  width: 25%;
+  margin-top: 20px;
+  padding: 0;
+  display: block;
+}
+
+.image-container.img {
+  vertical-align: bottom;
+}
+
+.stats-studentplaced-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  gap: 40px;
+}
+
+.video-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures thumbnail fits without shifting layout */
+}
+
+.custom-player {
+  overflow: hidden;
+  height: auto;
+  display: block;
+}
+
+.home-titles {
+  margin-right: 15px;
+}
+
+.home-title {
+  color: #000000;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.span-home-title {
+  color: #ed1334;
+  font-weight: bold;
+}
+
+.tag-line {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+@media screen and (min-width: 430px) and (max-width: 576px) {
+  .home-cover-text-container {
+    width: 100%;
+  }
+  .coverpage-container {
+    padding: 10px;
+    width: 100%;
+  }
+  .home-text-container {
+    padding-left: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .tag-line {
+    font-size: 1rem;
+    text-align: end;
+  }
+
+  .student-count {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .students-placed {
+    font-size: 11px;
+    text-align: end;
+    font-weight: 600;
+  }
+
+  .counting {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .plus-sign {
+    font-size: 1.4rem;
+  }
+
+  .placement-card {
+    min-width: 100px;
+    margin: 0px;
+  }
+  .student-count {
+    margin-right: 0px;
+  }
+
+  .banner-girl {
+    display: none;
+  }
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+
+  .stats-studentplaced-container {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .banner-girl {
+    width: 100%;
+    display: block;
+    display: none;
+  }
+  .custom-player {
+    max-width: 90%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+  .home-cover-text-container {
+    width: 100%;
+  }
+  .coverpage-container {
+    padding: 10px;
+    width: 100%;
+    background-image: none;
+  }
+  .home-text-container {
+    padding-left: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .home-title {
+    font-size: 1.3rem;
+  }
+
+  .tag-line {
+    font-size: 0.8rem;
+    text-align: end;
+  }
+
+  .student-count {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .students-placed {
+    font-size: 9px;
+    text-align: end;
+    font-weight: 600;
+  }
+
+  .counting {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .plus-sign {
+    font-size: 1rem;
+  }
+
+  .placement-card {
+    max-width: 100px;
+    margin: 0px;
+  }
+  .student-count {
+    margin-right: 0px;
+  }
+
+  .banner-girl {
+    display: none;
+  }
+
+  .stats-studentplaced-container {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .banner-girl {
+    width: 100%;
+    display: block;
+    display: none;
+  }
+  .custom-player {
+    max-width: 90%;
+    display: block;
+  }
+}
+
+/* For devices up to 576px (smallest screens like phones) */
+@media screen and (min-width: 576px) and (max-width: 796px) {
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+  .home-cover-text-container {
+    width: 100%;
+  }
+  .coverpage-container {
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    background-image: none;
+  }
+  .home-text-container {
+    margin-top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .tag-line {
+    font-size: 1.5rem;
+    text-align: end;
+  }
+
+  .student-count {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .students-placed {
+    font-size: 1rem;
+    text-align: end;
+    font-weight: 600;
+  }
+
+  .counting {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .plus-sign {
+    font-size: 2rem;
+  }
+
+  .placement-card {
+    min-width: 150px;
+    margin: 0px;
+  }
+  .student-count {
+    margin-right: 0px;
+  }
+
+  .banner-girl {
+    display: none;
+  }
+
+  .stats-studentplaced-container {
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .banner-girl {
+    width: 100%;
+    display: none;
+  }
+  .custom-player {
+    width: 90%;
+    display: block;
+  }
+}
+
+/* For devices between 576px and 976px (Medium Screens) */
+@media screen and (min-width: 796px) and (max-width: 1025px) {
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+  .coverpage-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .home-text-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-cover-text-container {
+    width: 100%;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .tag-line {
+    font-size: 1.4rem;
+    margin-left: 80px;
+  }
+
+  .student-count {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  .students-placed {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: end;
+  }
+
+  .plus-sign {
+    font-size: 2.4rem;
+  }
+
+  .counting {
+    font-size: 13px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .placement-card {
+    min-width: 160px;
+  }
+
+  .stats-studentplaced-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .home-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  .image-container {
+    width: 30%;
+    align-self: center;
+    margin: 0px;
+    justify-content: center;
+    display: none;
+  }
+
+  .banner-girl {
+    width: 100%;
+    display: none;
+  }
+  .custom-player {
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* For devices between 976px and 1300px (Large Screens) */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+  .coverpage-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .home-text-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-cover-text-container {
+    width: 66%;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .tag-line {
+    font-size: 1.5rem;
+    text-align: end;
+    letter-spacing: 0.6px;
+  }
+
+  .student-count {
+    font-size: 3rem;
+    letter-spacing: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .students-placed {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: end;
+  }
+
+  .counting {
+    font-size: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .placement-card {
+    min-width: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .plus-sign {
+    font-size: 2.5rem;
+  }
+
+  .stats-studentplaced-container {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .home-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .image-container {
+    width: 28%;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .banner-girl {
+    width: 90%;
+    display: block;
+  }
+  .custom-player {
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* For devices larger than 1300px (Extra-Large Screens) */
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+  .coverpage-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .home-text-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-cover-text-container {
+    width: 66%;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .home-title {
+    font-size: 3.5rem;
+  }
+
+  .tag-line {
+    font-size: 1.7rem;
+    text-align: end;
+    letter-spacing: 0.6px;
+  }
+
+  .student-count {
+    font-size: 3.5rem;
+    letter-spacing: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .students-placed {
+    font-size: 1.5rem;
+    text-align: end;
+    font-weight: 600;
+  }
+
+  .counting {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .placement-card {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 210px;
+  }
+  .plus-sign {
+    font-size: 2.5rem;
+  }
+
+  .stats-studentplaced-container {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .home-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .image-container {
+    width: 30%;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .banner-girl {
+    width: 90%;
+    display: block;
+  }
+  .custom-player {
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* For devices larger than 1500px (Extra-Large Screens) */
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+  .video-wrapper {
+    width: 400px;
+    height: 225px;
+  }
+  .coverpage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+  }
+  .home-text-container {
+    justify-content: end;
+    align-items: center;
+  }
+
+  .home-cover-text-container {
+    width: 66%;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .home-title {
+    font-size: 4rem;
+  }
+
+  .tag-line {
+    font-size: 2.5rem;
+    text-align: end;
+    letter-spacing: 0.6px;
+  }
+
+  .student-count {
+    font-size: 5rem;
+    letter-spacing: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: -2px;
+  }
+
+  .students-placed {
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: end;
+    margin-top: 0px;
+  }
+
+  .counting {
+    font-size: 1.4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .placement-card {
+    min-width: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .plus-sign {
+    font-size: 4rem;
+  }
+
+  .stats-studentplaced-container {
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  .home-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .image-container {
+    width: 25%;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .banner-girl {
+    width: 100%;
+    display: block;
+  }
+  .custom-player {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .stats-studentplaced-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+  }
+
+  .chart-with-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 225px;
+    width: 55%;
+  }
+
+  .chart-caption {
+    margin-top: 12px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Afacad;
+    text-align: center;
+  }
+
+  .coverpage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .placement-card {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: #ed1334;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 10.25);
+  }
+
+  .home-text-container {
+    justify-content: end;
+    align-items: center;
+  }
+
+  .home-cover-text-container {
+    width: 66%;
+    justify-content: space-between;
+    gap: 45px;
+    /* padding-top: 10px; */
+    padding-bottom: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .home-title {
+    font-size: 5.4rem;
+    font-family: Afacad;
+    font-weight: 500;
+  }
+
+  .tag-line {
+    font-size: 2.5rem;
+    text-align: end;
+    letter-spacing: 0.6px;
+    font-family: Afacad;
+    font-weight: 500;
+  }
+
+  .student-count {
+    font-size: 6rem;
+    letter-spacing: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .students-placed {
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: end;
+    margin-top: -37px;
+  }
+
+  .counting {
+    font-size: 1.9rem;
+    margin-top: 00px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .video-wrapper {
+    margin-top: -85px;
+    width: 550px;
+    height: 200px;
+  }
+
+  .plus-sign {
+    font-size: 5rem;
+  }
+
+  .stats-studentplaced-container {
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    align-items: center;
+    min-height: 220px;
+  }
+
+  .home-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .image-container {
+    width: 25%;
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .banner-girl {
+    width: 100%;
+    display: block;
+  }
+  .custom-player {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+  .stats-studentplaced-container {
+    transition: opacity 0.4s ease;
+  }
+
+  .stats-studentplaced-container.loading {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
